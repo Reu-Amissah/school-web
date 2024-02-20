@@ -1,8 +1,11 @@
 import "../App.css";
+import Header from "../components/Header";
 
 function Landing() {
   return (
-    <div className="bg-blue-800 text-slate-50">Here is the landing page</div>
+    <div className=" p-0 m-0">
+      <Header />
+    </div>
   );
 }
 
