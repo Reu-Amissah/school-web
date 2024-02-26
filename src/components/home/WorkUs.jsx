@@ -1,6 +1,6 @@
 import React from "react";
 import studs from "../../assets/bg4.jpg";
-import studs1 from "../../assets/studs2.jpg";
+import studs1 from "../../assets/bg2.jpg";
 import Listcheck from "./Listcheck";
 
 const WorkUs = () => {
@@ -13,7 +13,11 @@ const WorkUs = () => {
             alt="students mini"
             className="hidden lg:flex absolute top-[-40px] left-[-40px] rounded-md border-2 border-white w-[200px] lg:w-[300px] h-auto"
           />
-          <img src={studs1} alt="students1" className="rounded-md" />
+          <img
+            src={studs1}
+            alt="students1"
+            className="rounded-md h-[500px] w-full object-cover"
+          />
         </div>
         <div className="w-full mt-5 lg:mt-0 lg:w-6/12 font-nunito flex flex-col gap-3 lg:gap-4">
           <div className="text-base lg:text-lg border-l-2 border-l-orange px-2 py-[2px]">
