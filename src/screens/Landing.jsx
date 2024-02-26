@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navs/Navbar";
 import "../index.css";
-import WorkUs from "../components/WorkUs";
-import Activites from "../components/Activites";
-import Events from "../components/Events";
-import Values from "../components/Values";
-import Footer from "../components/Footer";
+import WorkUs from "../components/home/WorkUs";
+import Activites from "../components/home/Activites";
+import Events from "../components/home/Events";
+import Values from "../components/home/Values";
+import Footer from "../components/navs/Footer";
 
 const Landing = () => {
   return (

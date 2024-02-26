@@ -1,7 +1,7 @@
 import React from "react";
-import excell from "../assets/excellence.jpg";
-import resp from "../assets/respect.jpg";
-import coll from "../assets/collaboration.jpg";
+import excell from "../../assets/excellence.jpg";
+import resp from "../../assets/respect.jpg";
+import coll from "../../assets/collaboration.jpg";
 
 const Values = () => {
   return (

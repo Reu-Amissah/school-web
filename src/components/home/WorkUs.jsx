@@ -1,6 +1,6 @@
 import React from "react";
-import studs from "../assets/studs1.jpg";
-import studs1 from "../assets/studs2.jpg";
+import studs from "../../assets/studs1.jpg";
+import studs1 from "../../assets/studs2.jpg";
 import Listcheck from "./Listcheck";
 
 const WorkUs = () => {
