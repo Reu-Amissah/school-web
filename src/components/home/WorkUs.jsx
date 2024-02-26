@@ -5,32 +5,30 @@ import Listcheck from "./Listcheck";
 
 const WorkUs = () => {
   return (
-    <div className=" py-44 bg-lightblue">
-      <div className="w-9/12 mx-auto flex justify-between items-center">
-        <div className=" relative w-5/12">
+    <div className=" py-32 lg:py-44 bg-lightblue">
+      <div className="w-11/12 lg:w-10/12 xl:w-9/12 mx-auto flex flex-col lg:flex-row justify-between items-center">
+        <div className=" relative w-full lg:w-5/12">
           <img
             src={studs}
             alt="students mini"
-            width={300}
-            height={300}
-            className="absolute top-[-40px] left-[-40px] rounded-md border-2 border-white"
+            className="hidden lg:flex absolute top-[-40px] left-[-40px] rounded-md border-2 border-white w-[200px] lg:w-[300px] h-auto"
           />
           <img src={studs1} alt="students1" className="rounded-md" />
         </div>
-        <div className="w-6/12 font-nunito flex flex-col gap-4">
-          <div className="text-[18px] border-l-2 border-l-orange px-2 py-[2px]">
+        <div className="w-full mt-5 lg:mt-0 lg:w-6/12 font-nunito flex flex-col gap-3 lg:gap-4">
+          <div className="text-base lg:text-lg border-l-2 border-l-orange px-2 py-[2px]">
             WHY WORK WITH US
           </div>
-          <div className="text-[32px] text-blue font-semibold">
+          <div className="text-2xl xl:text-3xl text-blue font-semibold">
             Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum
           </div>
-          <div className="text-[18px]">
+          <div className="text-base lg:text-lg">
             Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum, ac aliquet odio mattis. Korem
             ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
           </div>
-          <div className="text-[18px] flex flex-col gap-2">
+          <div className="text-base lg:text-lg flex flex-col gap-2">
             <Listcheck description={"Proffesional Tutors"} />
             <Listcheck description={"Hands-On"} />
             <Listcheck description={"STEM focused"} />

@@ -3,15 +3,15 @@ import Evcomp from "./Evcomp";
 
 const Events = () => {
   return (
-    <div className=" py-44 bg-[url('./assets/stacked-steps.svg')] bg-cover bg-center">
-      <div className="w-9/12 mx-auto ">
+    <div className=" py-32 lg:py-44 bg-[url('./assets/stacked-steps.svg')] bg-cover bg-center">
+      <div className="w-11/12 lg:w-10/12 xl:w-9/12 mx-auto ">
         <div className="flex justify-between items-center mb-5">
-          <div className="text-blue text-[28px]">UPCOMING EVENTS</div>
-          <div className="text-blue px-[20px] py-[15px] border-2 border-blue">
+          <div className="text-blue text-xl lg:text-3xl">UPCOMING EVENTS</div>
+          <div className="text-blue text-base  lg:text-xl px-4 py-3 lg:px-5 lg:py-4 border-2 border-blue">
             VIEW ALL EVENTS
           </div>
         </div>
-        <div className=" flex gap-6">
+        <div className=" flex flex-col lg:flex-row gap-4 lg:gap-2">
           <Evcomp
             title={"Valentine's Day - Time With Somebody"}
             date={"February 14, 2024"}

@@ -42,7 +42,7 @@ const Navbar = () => {
 
   return (
     <div className="w-screen font-nunito  fixed top-0 z-10 bg-white">
-      <div className="flex justify-between items-center py-4 w-10/12 mx-auto">
+      <div className="flex justify-between items-center py-4 w-11/12 lg:w-10/12 mx-auto">
         <div className="">HELLO</div>
         <div className="hidden lg:flex items-center gap-10 text-md">
           {navItems.map((navitem, index) => (
@@ -66,22 +66,12 @@ const Navbar = () => {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="text-black focus:outline-none"
+            className="text-black focus:outline-none border-b border-b-black"
             onClick={() => {
               handleNavDrop();
             }}
           >
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
+            menu
           </button>
         </div>
       </div>

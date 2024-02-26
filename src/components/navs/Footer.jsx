@@ -27,7 +27,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className=" py-44 bg-white font-nunito">
+    <div className=" py-32 lg:py-44 bg-white font-nunito">
       <div className="w-11/12 lg:w-9/12 mx-auto ">
         <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start mb-10">
           <div className="flex flex-col items-center lg:items-start">

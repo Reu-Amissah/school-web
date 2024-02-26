@@ -2,7 +2,7 @@ import React from "react";
 
 const Evcomp = ({ date, title, time }) => {
   return (
-    <div className="bg-white px-5 py-8 w-1/3 flex flex-col gap-6">
+    <div className="bg-white px-5 py-8 w-full lg:w-1/3 flex flex-col gap-6">
       <div className="flex items-center gap-2 text-orange">
         <span className="material-symbols-outlined">calendar_month</span>
         EVENT • {date}

@@ -13,7 +13,7 @@ const Landing = () => {
       <div className=" w-screen font-nunito overscroll-none">
         <Navbar></Navbar>
         <div className="h-screen w-full bg-[url('./assets/studs1.jpg')] bg-cover bg-center overscroll-none">
-          <div className="h-full w-full bg-gray-900 bg-opacity-20 flex flex-col justify-end items-center pb-24 px-32 gap-5">
+          <div className="h-full w-full bg-gray-900 bg-opacity-20 flex flex-col justify-end items-center pb-10 lg:pb-24 px-6 lg:px-28 xl:px-32 gap-5">
             <div className="text-white text-base lg:text-xl">
               Welcome To WESTBURB UNIVERSITY
             </div>
@@ -21,12 +21,12 @@ const Landing = () => {
               Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
               turpis molestie, dictum est a, mattis te
             </div>
-            <div className="flex gap-[25px]">
-              <div className="border-2 border-transparent hover:border-blue hover:bg-transparent hover:text-white hover:backdrop-blur-sm bg-orange text-white text-base lg:text-lg px-5 py-2 flex items-center">
+            <div className="flex gap-4 gap-6">
+              <div className="border-2 border-transparent hover:border-blue hover:bg-transparent hover:text-white hover:backdrop-blur-sm bg-orange text-white text-md lg:text-lg px-3 lg:px-5 py-1 lg:py-2 flex items-center">
                 Donate
                 <span class="material-symbols-outlined">monetization_on</span>
               </div>
-              <div className="border-2 border-transparent hover:border-orange hover:bg-transparent hover:text-white hover:backdrop-blur-sm bg-blue text-white text-base lg:text-lg px-5 py-2 flex items-center">
+              <div className="border-2 border-transparent hover:border-orange hover:bg-transparent hover:text-white hover:backdrop-blur-sm bg-blue text-white text-md lg:text-lg px-3 lg:px-5 py-1 lg:py-2 flex items-center">
                 Enroll Now
                 <span class="material-symbols-outlined">east</span>
               </div>
