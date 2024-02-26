@@ -1,5 +1,5 @@
 import React from "react";
-import studs from "../../assets/studs1.jpg";
+import studs from "../../assets/bg4.jpg";
 import studs1 from "../../assets/studs2.jpg";
 import Listcheck from "./Listcheck";
 
@@ -17,11 +17,11 @@ const WorkUs = () => {
         </div>
         <div className="w-full mt-5 lg:mt-0 lg:w-6/12 font-nunito flex flex-col gap-3 lg:gap-4">
           <div className="text-base lg:text-lg border-l-2 border-l-orange px-2 py-[2px]">
-            WHY WORK WITH US
+            CONTRIBUTE TO A UNIQUE LEARNING ENVIRONMENT
           </div>
           <div className="text-2xl xl:text-3xl text-blue font-semibold">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum
+            Work with us to create a personalized and engaging experience for
+            every student.
           </div>
           <div className="text-base lg:text-lg">
             Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc

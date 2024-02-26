@@ -12,7 +12,7 @@ const Landing = () => {
     <div className="overscroll-none">
       <div className=" w-screen font-nunito overscroll-none">
         <Navbar></Navbar>
-        <div className="h-screen w-full bg-[url('./assets/studs1.jpg')] bg-cover bg-center overscroll-none">
+        <div className="h-screen w-full bg-[url('./assets/home-bg.jpg')] bg-cover bg-center overscroll-none">
           <div className="h-full w-full bg-gray-900 bg-opacity-20 flex flex-col justify-end items-center pb-10 lg:pb-24 px-6 lg:px-28 xl:px-32 gap-5">
             <div className="text-white text-base lg:text-xl">
               Welcome To WESTBURB UNIVERSITY
