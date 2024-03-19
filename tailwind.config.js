@@ -13,6 +13,7 @@ export default {
         green: "#1eb424",
         lightgreen: "#e0fde1",
         lightgrey: "#cfcfcf",
+        lightgrey1: "#f8faff",
       },
     },
   },

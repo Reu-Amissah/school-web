@@ -21,7 +21,7 @@ const Landing = () => {
               Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
               turpis molestie, dictum est a, mattis te
             </div>
-            <div className="flex gap-4 gap-6">
+            <div className="flex gap-4 lg:gap-6">
               <div className="border-2 border-transparent hover:border-blue hover:bg-transparent hover:text-white hover:backdrop-blur-sm bg-orange text-white text-md lg:text-lg px-3 lg:px-5 py-1 lg:py-2 flex items-center">
                 Donate
                 <span class="material-symbols-outlined">monetization_on</span>

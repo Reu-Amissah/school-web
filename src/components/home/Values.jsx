@@ -5,7 +5,7 @@ import coll from "../../assets/collaboration.jpg";
 
 const Values = () => {
   return (
-    <div className=" py-32 lg:py-44 bg-white font-nunito">
+    <div className=" pb-32 pt-20 lg:pb-20 lg:pt-44 bg-white font-nunito">
       <div className="w-11/12 lg:w-10/12 xl:w-9/12 mx-auto ">
         <div className="flex flex-col items-center gap-1">
           <div className="text-base lg:text-lg border-l-2 border-l-orange px-2 py-[2px]">
