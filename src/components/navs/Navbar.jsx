@@ -40,33 +40,75 @@ const Navbar = () => {
     },
   ];
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+
+      if (scrollTop > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="w-screen font-nunito  fixed top-0 z-10 bg-white">
+    <div
+      className={`w-screen font-nunito  fixed top-0 z-10 ${
+        isScrolled
+          ? "bg-white"
+          : "bg-blue bg-opacity-25 border-b border-b-gray-500 backdrop-blur-md"
+      }`}
+    >
       <div className="flex justify-between items-center py-4 w-11/12 lg:w-10/12 mx-auto">
-        <div className="">HELLO</div>
-        <div className="hidden lg:flex items-center gap-10 text-md">
+        <div
+          className={`${
+            isScrolled ? "text-black" : "text-white"
+          } font-extrabold`}
+        >
+          HELLO
+        </div>
+        <div
+          className={`hidden lg:flex items-center gap-10 text-md ${
+            isScrolled ? "text-black" : "text-white"
+          }`}
+        >
           {navItems.map((navitem, index) => (
             <div
               key={index}
               onClick={() => navigate(navitem?.path, { replace: true })}
               className={`${
-                location === navitem.navLoc ? "font-semibold " : ""
+                location === navitem.navLoc ? "font-bold " : "font-semibold"
               }  cursor-pointer `}
             >
               {navitem.name}
             </div>
           ))}
-          <div className="flex gap-6">
-            <div className="border-2 border-blue px-5 py-2">Enroll Now</div>
-            <div className="border-2 border-transparent bg-blue text-white px-5 py-2">
-              Donate Now
+          <div className="flex items-center gap-6">
+            <div className="text-blue font-bold rounded-md underline underline-offset-4 decoration-gray-400 hover:text-extrabold hover:underline hover:underline-offset-2 hover:cursor-pointer hover:decoration-blue">
+              Donate
+            </div>
+            <div
+              className={`border-2 border-blue rounded-md bg-white text-blue hover:bg-blue hover:text-white hover:cursor-pointer px-5 py-2 font-semibold ${
+                isScrolled ? "bg-white" : "bg-transparent"
+              }`}
+            >
+              Enroll Now
             </div>
           </div>
         </div>
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="text-black focus:outline-none border-b border-b-black"
+            className={`focus:outline-none underline underline-offset-4 hover:underline-offset-2 text-semibold ${
+              isScrolled ? "text-black" : "text-white"
+            }`}
             onClick={() => {
               handleNavDrop();
             }}
@@ -84,14 +126,18 @@ const Navbar = () => {
                 onClick={() => navigate(navitem.path, { replace: true })}
                 className={`${
                   location === navItems.navLoc ? "font-semibold " : ""
-                } text-black cursor-pointer  hover:text-orange transition-all duration-150 ease-in-out`}
+                } ${
+                  isScrolled ? "text-black" : "text-white"
+                } cursor-pointer  hover:text-orange transition-all duration-150 ease-in-out`}
               >
                 {navitem.name}
               </li>
             ))}
-            <div className="border-2 border-blue px-4 py-2">Enroll Now</div>
-            <div className="border-2 border-transparent bg-blue text-white px-4 py-2">
-              Donate Now
+            <div className="text-blue font-bold rounded-md underline underline-offset-4 decoration-gray-400 hover:text-extrabold hover:underline hover:underline-offset-2 hover:cursor-pointer hover:decoration-blue">
+              Donate
+            </div>
+            <div className="border-2 border-transparent rounded-md bg-blue text-white px-4 py-2">
+              Enroll Now
             </div>
           </ul>
         )}
