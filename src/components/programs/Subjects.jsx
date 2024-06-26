@@ -4,7 +4,7 @@ import Subject from "./Subject";
 const Subjects = () => {
   return (
     <div className=" bg-[url('./assets/g2.jpeg')] bg-cover bg-center">
-      <div className="  py-32 lg:py-44 h-full w-full bg-white bg-opacity-75">
+      <div className="  py-32 lg:py-44 h-full w-full bg-white bg-opacity-90">
         <div className="w-11/12 lg:w-10/12 xl:w-9/12 mx-auto flex flex-col lg:flex-row justify-between">
           <div className="w-full h-full  lg:w-4/12">
             <div className="flex flex-col items-start lg:items-end mb-5 lg:mb-0">
