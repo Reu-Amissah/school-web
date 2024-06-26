@@ -5,6 +5,7 @@ import Landing from "./screens/Landing";
 import { About } from "./screens/About";
 import Programs from "./screens/Programs";
 import Contact from "./screens/Contact";
+import Gallery from "./screens/Gallery";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/programs" element={<Programs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </>
   );

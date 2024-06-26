@@ -34,6 +34,11 @@ const Navbar = () => {
       navLoc: "programs",
     },
     {
+      path: "/gallery",
+      name: "Gallery",
+      navLoc: "gallery",
+    },
+    {
       path: "/contact",
       name: "Contact",
       navLoc: "contact",
