@@ -21,6 +21,11 @@ const Footer = () => {
       name: "Programs",
     },
     {
+      path: "/gallery",
+      name: "Gallery",
+      navLoc: "gallery",
+    },
+    {
       path: "/contact",
       name: "Contact",
     },
